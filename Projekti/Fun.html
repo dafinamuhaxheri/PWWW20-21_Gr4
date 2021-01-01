@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+     <link rel="stylesheet" href="css/middle.css">
+        <link rel="stylesheet" href="css/anetaretHomePage.css">
+         <link rel="stylesheet" href="css/generalcode.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+         <title>BagsFAQ</title>
+<style>
+@font-face {
+  font-family: myFont;
+  src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+#fontTitle{
+font-family:myFont;
+}
+#div1, #div2 {
+  float: left;
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#dd1{
+padding:100px;
+margin:100px;
+padding-left:1px;
+padding-top:100px;
+}
+
+#note{
+width:150px;
+height:80px;
+background-color:#D83C2D;
+color:white;
+text-align:left;
+position:relative;
+left:-450px;
+top:150px;
+border:1px dashed black;
+-webkit-transform:translate(30px,20px);
+-ms-transform:translate(30px,20px);
+transform:translate(30px,20px);
+}
+
+.scaling{
+padding: 50px;
+  background-color:#D0312D;
+  transition: transform .2s;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+
+}
+  .scaling:hover{
+-ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}        
+   
+.scalingX{
+  margin: 50px;
+  width: 200px;
+  height: 50px;
+  background-color: purple;
+  border: 1px solid black;
+color:white;
+padding:10px;
+ 
+}
+.scalingX:hover{
+ -ms-transform: scaleX(2); /* IE 9 */
+-webkit-transform: scaleX(2); 
+  transform: scaleX(2); /* Standard syntax */
+
+}
+
+.scalingY{
+  margin: 50px;
+  width: 200px;
+  height: 50px;
+  background-color: blue;
+  border: 1px solid black;
+color:white;
+padding:10px;
+ 
+}
+.scalingY:hover{
+ -ms-transform: scaleY(0.5); /* IE 9 */
+-webkit-transform: scaleY(0.5); 
+  transform: scaleY(0.5); /* Standard syntax */
+
+}
+
+
+.rotateH{
+  margin: 50px;
+  width: 200px;
+  height: 50px;
+  background-color: green;
+  border: 1px solid black;
+color:white;
+padding:10px; 
+}
+.rotateH:hover{
+ -ms- transform: rotateX(150deg); /* IE 9 */
+-webkit- transform: rotateX(150deg);
+ transform: rotateX(150deg);
+}
+
+.rotateV{
+  margin: 50px;
+  width: 200px;
+  height: 50px;
+  background-color: orange;
+  border: 1px solid black;
+color:white;
+padding:10px; 
+}
+.rotateV:hover{
+ -ms- transform: rotateY(150deg); /* IE 9 */
+-webkit- transform: rotateY(150deg);
+ transform: rotateY(150deg);
+}
+
+.skewing{
+  margin: 50px;
+  width: 200px;
+  height: 50px;
+  background-color: yellow;
+  border: 1px solid black;
+color:white;
+padding:10px;
+ 
+}
+.skewing:hover{
+ -ms-transform: skew(20deg); /* IE 9 */
+-webkit-transform: skew(20deg); 
+  transform: skew(20deg); /* Standard syntax */
+
+}
+
+
+#anime{
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius:50px;
+-ms-border-radius:50px;
+border-radius:50px;
+  background-image:radial-gradient(circle,white,green,blue);
+  animation: mymove 5s infinite;
+  position:relative;
+left:300px;
+
+padding:10px;
+margin:50px;
+}
+
+@keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 0px; left:100px;}
+  75%  {top: 0px;left:100px}
+  100% {top: 0x;}
+}
+
+
+#rainbow{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+
+#worker{
+color:red;
+}
+
+
+.item1 {
+  grid-area: myArea;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'myArea myArea myArea myArea myArea';
+  grid-gap: 10px;
+  background-color: #C8A2C8;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+color:white;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+
+#example1 {
+  background-image: url(images/img_flwr.gif), url(images/paper.gif);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding-bottom: 80px;
+  width: 100%;
+  height: 80px;
+  text-shadow: 2px 2px darkgray;
+}
+.withoutwrdwrapp{
+  width: 150px;
+  border: 1px solid black;
+  word-wrap: break-word;
+  padding:0;
+  margin: 0;
+}
+.wrdwrapp{
+  width: 150px;
+  border: 1px solid black;
+  padding:0;
+  margin: 0;
+}
+
+
+</style>    
+
+
+
+ <script>
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+
+
+
+
+
+</script>
+     
+       
+     </head>
+     <body style="min-width:1000px">
+
+
+
+        <div class="">
+            <div class="topbar" >
+                <div class="contactNr">
+                    Call Us: xxxxxxxxxxxxxxxxxxxx
+                </div>
+                <div class="contactEm" onClick="location.href='https://mail.google.com/mail'" style="cursor:pointer;">
+                    Email Us: contact@mydomain.com
+                </div>    
+                <div style=" display:inline-block; float:right;"> 
+                <form class="searchbar" action="">
+                   
+                    <input type="text" placeholder="" name="search">
+                    <button type="submit">
+                        <span>
+                                    <i class="fa fa-search" aria-hidden="true" style="width:2px;height:2px;right:7px;position:relative;"></i>
+                        </span>
+                    </button>
+                
+                </form>
+                    </div> 
+            </div>
+            <div class="menu">
+                <div class="logo">
+                    <a href="Home%20page.html"><img src="images/Screenshot 2020-12-13 165136.png" style="margin-left:50px;width:210px;height:95px;position:absolute;" alt="logo"> 
+                    </div> 
+                
+                <div class="main-nav">
+                    
+                    
+                    <ul>
+                        <li><a class="list" href="Home Page.html"  id="active">HOMEPAGE </a></li>
+                    </ul>
+                        
+                        
+           
+                    <ul >
+                        <li>
+                           <a class="list" href="Our-Products.html">OUR BRANDS</a>
+                          <div class="dropdown-content">
+                          <a href="Our-Products.html#Zara">ZARA</a>
+                          <a href="Our-Products.html#Mango">Mango</a>
+                          <a href="Our-Products.html#Stradivarius">Stradivarius</a>
+                          <a href="Our-Products.html#Hotic">Hotic</a>
+                          </div>
+                    
+                        
+                        </li>
+                       </ul>
+                        
+                        
+                        
+                        
+    
+                      
+                <ul>
+                    <li><a class="list"  href="About Us.html">ABOUT US</a>
+                       <div class="dropdown-content">
+                      <a href="Privacy Policy.html">Privacy Policy</a>
+                       <a href="Terms Of Service.html">Terms of Service</a>
+                       <a href="Refund Policy.html">Refund Policy</a>
+                      </div>
+                    </li>
+                </ul>    
+                 
+                
+                
+                <ul>
+                    <li><a class="list" href="Sign In.html" target="_blank">LOGIN</a>
+                      <div class="dropdown-content">
+                      <a href="Sign In.html" target="_blank">Signin</a>
+                      <a href="Sign Up.html" target="_blank">Signup</a>
+                      </div>
+                    </li> 
+                </ul>   
+    
+             
+                      
+            <ul>
+                <li><a class="list"  href="FAQ.html">FAQ</a>
+                   <div class="dropdown-content">
+                  <a href="Fun.html">Click for Fun</a>
+                   <a href="Info.html">Click for Info</a>
+                   <a href="Other.html">Other..</a>
+                  </div>
+                </li>
+            </ul>  
+
+
+
+
+                
+                
+                <ul>
+                    <li>
+                       <a class="list" href="Cart.html"><i class="fas fa-shopping-cart fa-1x"></i></a>
+                    </li> 
+                </ul>
+                  
+                    
+                    
+                    
+             </div>
+             
+         </div>
+        
+        
+       </div> 
+       
+  <!-- Drag and Drop-->
+<div id="dd1">
+<p id="fontTitle"style="color:navy;"><em><strong>Try dragging the picture around these boxes!</strong></em></p>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="images/drop.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="100">
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<div id="note">Note: The drag and drop moves the picture from its former position.</div>
+</div>
+<div class="scaling">Hover for some zooming.</div>
+<div class="scalingX">Hover to scale it horizontally.</div>
+<div class="scalingY">Hover to scale it vertically.</div>
+<div class="rotateH">Hover to rotate it horizontally.</div>
+<div class="rotateV">Hover to rotate it vertically.</div>
+<div class="skewing">Hover to skew it.</div>    
+<div id="anime"></div>  
+<div id="rainbow"></div><br><br>
+<div class="grid-container">
+  <div class="item1">Most famous bag female model.</div>
+  <div class="item2">Gigi Hadid</div>
+  <div class="item3">Kendall Jenner</div>  
+  <div class="item4">Lily Aldridge</div>
+  <div class="item5">Karlie Kloss</div>
+  <div class="item6">Bella Hadid</div>
+</div>
+<br><br>
+
+
+<div id="example1">
+  Multiple background images example 
+</div>
+<div class="withoutwrdwrapp">
+This div contains a very long word: thisisaveryveryveryveryveryverylongword.
+</div>
+<div class="wrdwrapp">
+This div contains a very long word: thisisaveryveryveryveryveryverylongword.
+</div>
+
+
+<!--Footer-->
+ <div style="width:100%;height:auto;background-color:rgb(34,34,34); ">
+            <div id="wrapper">
+                <div>
+                    <h3>ABOUT US</h3>
+                    <br>
+                    <img src="images/footer-bag.png" alt="About|US">
+                    <br>
+                    <p>In 1852, Francis Wolle, a schoolteacher, invented the first machine to mass-produce paper bags.
+                        Wolle and his brother patented the machine and founded the Union Paper Bag Company.</p>
+                    <br>
+                    <p><a style="text-decoration: none;color:rgb(124,156,55);font-family:'Niramit','Sorts Mill Goudy','sans serif';
+     font-size:16px;" href="">Read more &#187;</a></p>
+                </div>
+                <div>
+                    <h3>LINK BLOCK</h3>
+                    <ul id="arrow">
+                        <li><a style="text-decoration: none" href=""><span style="color: rgb(102,102,102)">&#187;</span>
+                                Metalic Pink Bag</a></li>
+                        <li><a style="text-decoration: none" href=""><span style="color: rgb(102,102,102)">&#187;</span>
+                                Black Leather Bag</a></li>
+                        <li><a style="text-decoration: none" href=""><span style="color: rgb(102,102,102)">&#187;</span>
+                                Modern Pastels Bag</a></li>
+                        <li><a style="text-decoration: none" href=""><span style="color: rgb(102,102,102)">&#187;</span>
+                                Classy Red Bag</a></li>
+                        <li><a style="text-decoration: none" href=""><span style="color: rgb(102,102,102)">&#187;</span>
+                                Snake Print Bag</a></li>
+                        <li><a style="text-decoration: none" href=""><span style="color: rgb(102,102,102)">&#187;</span>
+                                Modern Mustard Bag</a></li>
+                        <li><a style="text-decoration: none" href=""><span style="color: rgb(102,102,102)">&#187;</span>
+                                Chique Black Bag</a></li>
+                        <li><a style="text-decoration: none" href=""><span style="color: rgb(102,102,102)">&#187;</span>
+                                Gen Z Lilac Bag</a></li>
+                        <li><a style="text-decoration: none" href=""><span style="color: rgb(102,102,102)">&#187;</span>
+                                Red Leather Bag</a></li>
+                        <li><a style="text-decoration: none" href=""><span style="color: rgb(102,102,102)">&#187;</span>
+                                Satchel Bag</a></li>
+                        <li><a style="text-decoration: none" href=""><span style="color: rgb(102,102,102)">&#187;</span>
+                                Belt Bag</a></li>
+                        <li><a style="text-decoration: none" href=""><span style="color: rgb(102,102,102)">&#187;</span>
+                                Drawstring Bag</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h3>FROM THE BLOG</h3>
+                    <div class="small">
+                        <h3>Lifespan of a Bag</h3>
+                        <p>We assess the physical, fashion-related and financial attributes that help a purse stand the test of time.</p>                        <br>
+                        <p><a style="text-decoration: none;color:rgb(124,156,55)" href="">Read more &#187;</a></p>
+                    </div>
+                    <div class="small">
+                        <br>
+                        <h3>Lifespan of a Bag</h3>
+                        <p>We assess the physical, fashion-related and financial attributes that help a purse stand the test of time.</p>
+                        <br>
+                        <p><a style="text-decoration: none;color:rgb(124,156,55)" href="">Read more &#187;</a></p>
+                    </div>
+                </div>
+                <div>
+                    <h3>CONTACT US</h3>
+                    <div class="small">
+                        <p>TEL: xxxx xxxxxxxx</p>
+                        <br>
+                        <p>Fax: xxxxxxxx</p>
+                        <br>
+                        <p id="email">Email:<a style="text-decoration:none;color:rgb(124,156,55)"
+                                href="">contact@mydomain.com</a></p>
+                    </div>
+                    <div class="small">
+                        <h3>NEWSLETTER</h3>
+                        <br>
+                        <label class="form" for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="  Name">
+                        <br><br>
+                        <label class="form" for="email"></label>
+                        <input type="text" id="email" name="email" placeholder="  Email">
+                        <br> <br>
+                        <button> <b>Submit</b> </button>
+                    </div>
+                </div>
+                <br><br><br>
+                <hr style="padding: 0px;
+                background-color: black;
+                margin-bottom: 5px;
+                margin-top: 10px;
+                border: 1px solid black;">
+                <p id="thelast"><span id="grey">COPYRIGHT &COPY; 2021-All rights reserved- AllRounder<abbr
+                            title="AllRounder"></abbr></span></p>
+            </div>
+
+        </div>
+    </div>
+
+            
+</body>
+</html>
