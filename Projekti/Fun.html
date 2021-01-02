@@ -680,6 +680,22 @@ function myFunctionE() {
   var res = patt.exec(str);
   document.getElementById("demo9").innerHTML = res;
 }
+    function myFunctionT() 
+    {
+  var str = "The best things in life are free";
+  var patt = new RegExp("e");
+  var res = patt.test(str);
+  document.getElementById("demo10").innerHTML = res;
+}
+
+
+function myFunctionI() 
+    {
+  var str = "Computer Science";
+  var patt1 = /science/i;
+  var result = str.match(patt1);
+  document.getElementById("demo11").innerHTML = result;
+}
 </script>    
 
 </body>
