@@ -418,7 +418,11 @@ border: 1px solid black;">
     var txt="";
     var emri=window.prompt("Enter your name:");
     var mbiemri=window.prompt("Enter your surname:");
-    var person={emri,mbiemri};
+    var person={emri,mbiemri};var w;var day;
+for(w in person){txt+=person[w]+" "}window.alert("Hello and Welcome "+txt+".");
+switch (new Date().getDay()) {  case 0:day = "Sunday";break;
+  case 1: day = "Monday"; break;
+  case 2:day = "Tuesday"; break;
 </script>
 
 </body>
