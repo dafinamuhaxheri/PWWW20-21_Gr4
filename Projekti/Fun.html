@@ -669,7 +669,17 @@ function startWorker() {
     document.getElementById("result1").innerHTML = "Sorry, your browser does not support Web Workers...";
   }
 }
+function stopWorker() { 
+  work1.terminate();
+  work1 = undefined;
+}
 
+function myFunctionE() {
+  var str = "The best things in life are free";
+  var patt = new RegExp("e");
+  var res = patt.exec(str);
+  document.getElementById("demo9").innerHTML = res;
+}
 </script>    
 
 </body>
