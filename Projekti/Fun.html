@@ -655,6 +655,20 @@ function validateForm() {
     return false;
   }
 }
+    var work1;
+
+function startWorker() {
+  if(typeof(Worker) !== "undefined") {
+    if(typeof(work1) == "undefined") {
+      work1 = new Worker("demo_workers.js");
+    }
+    work1.onmessage = function(event) {
+      document.getElementById("result1").innerHTML = event.data;
+    };
+  } else {
+    document.getElementById("result1").innerHTML = "Sorry, your browser does not support Web Workers...";
+  }
+}
 
 </script>    
 
