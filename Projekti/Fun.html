@@ -635,6 +635,27 @@ font-size:16px;" href="">Read more &#187;</a></p>
     </div>
   </footer>
 <script>
+    function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+function validateForm() {
+  var x = document.forms["myForm"]["search"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
 </script>    
 
 </body>
