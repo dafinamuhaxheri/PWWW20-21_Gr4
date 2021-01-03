@@ -193,7 +193,13 @@ else {
 }
 // Check browser support
 if (typeof(Storage) !== "undefined") {
-
+  // Store
+  sessionStorage.setItem("lastname", "John");
+  // Retrieve
+  document.getElementById("result1").innerHTML = sessionStorage.getItem("lastname");
+} else {
+  document.getElementById("result1").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
   </script>
 
 
