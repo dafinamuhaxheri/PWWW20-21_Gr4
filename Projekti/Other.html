@@ -180,7 +180,12 @@
     var myMother = new Person("Sally", "Rally", 48, "green");
 
     document.getElementById("demo7").innerHTML = "The nationality of my father is " + myFather.nationality + ". The nationality of my mother is " + myMother.nationality;
-
+// Check browser support
+if (typeof(Storage) !== "undefined") 
+{
+  // Store
+  localStorage.setItem("lastname", "Smith");
+  // Retrieve
 
 
   </script>
@@ -400,7 +405,8 @@
   </div>
 
   <div id="images1"></div>
-      
+      <div id="result"></div>
+<div id="result1"></div>
   <!--Footer-->
   
 <!--Footer-->
